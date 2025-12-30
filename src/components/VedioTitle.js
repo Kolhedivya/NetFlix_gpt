@@ -1,10 +1,10 @@
 
 
 const VedioTitle = ({ title, year }) => {
-    console.log(title);
+
 
     return (
-        <div className='w-screen aspect-video pt-[20%]  px-24 absolute text-white bg-gradient-to-r from-black'>
+        <div className='w-screen aspect-video pt-[10%]  px-24 absolute text-white bg-gradient-to-r from-black'>
             <h1 className='text-3xl font-bold'>{title}</h1>
             <p className='text-xl font-bold'>{year}</p>
             <p className="py-6 text-lg w-1/4">In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries</p>
