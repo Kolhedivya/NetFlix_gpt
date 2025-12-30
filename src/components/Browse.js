@@ -8,6 +8,7 @@ import useTrendingMovies from '../hooks/useTrendingMovies.js'
 import MainContainer from './MainContainer.js';
 import SecondoryContainer from './SecondoryContainer.js';
 import useTopRatedMovie from '../hooks/useTopRatedMovie.js';
+import GptSearch from './GptSearch.js';
 
 
 const Browse = () => {
@@ -20,6 +21,7 @@ const Browse = () => {
     return (
         <div>
             <Header />
+            <GptSearch />
             <MainContainer />
             <SecondoryContainer />
         </div>

@@ -5,7 +5,7 @@ const VedioBackground = () => {
             <iframe
 
                 className="w-full aspect-video"
-                src="https://www.youtube.com/embed/AfQ13jsLDms?autoplay=1&mute=1&rel=0&modestbranding=1"
+                src="https://www.youtube.com/embed/AfQ13jsLDms?autoplay=1&mute=1&loop=1&rel=0&modestbranding=1"
                 title="Stranger Things Trailer"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
