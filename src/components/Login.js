@@ -6,7 +6,7 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfi
 import { auth } from '../utils/firebase'
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { PHOTO_URL } from '../utils/constants';
+import { BG_POSTER, PHOTO_URL } from '../utils/constants';
 
 const Login = () => {
 
@@ -96,7 +96,7 @@ const Login = () => {
             <Header />
             <div className='absolute'>
                 <img alt='backgound-img'
-                    src='https://assets.nflxext.com/ffe/siteui/vlv3/8e4a7625-f942-48f5-a9b0-d470b772bc8c/web/IN-en-20251215-TRIFECTA-perspective_a8575e53-99ab-4f16-a2d6-c037acaf12a6_large.jpg'
+                    src={BG_POSTER}
                 ></img>
             </div>
             <form onSubmit={(e) => { e.preventDefault() }} className='p-12 bg-black absolute w-3/12 my-36 mx-auto right-0 left-0 rounded-lg opacity-90'>
