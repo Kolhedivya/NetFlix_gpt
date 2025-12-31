@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addRecommendedMovies } from "../utils/movieSlice";
 
 const useRecommendedMovies = () => {
     const apiKey = "aad3dd99";
 
     const dispatch = useDispatch()
+    const nowrecommendedMovies = useSelector(store => store.movies.recommendedMovies)
 
     const nowPlayingMovies = async () => {
         let movies = [];
@@ -27,7 +28,7 @@ const useRecommendedMovies = () => {
     }
 
     useEffect(() => {
-        nowPlayingMovies()
+        !nowrecommendedMovies && nowPlayingMovies()
     }, [])
 }
 export default useRecommendedMovies;

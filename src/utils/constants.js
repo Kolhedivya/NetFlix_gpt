@@ -12,3 +12,5 @@ export const SUPPORTED_LANUGAGE = [{
 }, {
     identifier: "japnesse", name: "Japnesse"
 }];
+
+//export const OPENI_AI_KEY = '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';

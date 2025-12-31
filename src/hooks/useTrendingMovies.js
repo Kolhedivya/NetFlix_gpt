@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrendingMovies } from '../utils/movieSlice';
 import { useEffect } from 'react';
 
@@ -6,6 +6,7 @@ const useTrendingMovies = () => {
     const apiKey = "aad3dd99";
 
     const dispatch = useDispatch()
+    const nowrtrendingMovies = useSelector(store => store.movies.trendingMovies)
 
     const nowPlayingMovies = async () => {
         let movies = [];
@@ -27,7 +28,7 @@ const useTrendingMovies = () => {
     }
 
     useEffect(() => {
-        nowPlayingMovies()
+        !nowrtrendingMovies && nowPlayingMovies()
     }, [])
 
 }
