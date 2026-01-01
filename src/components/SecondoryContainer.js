@@ -11,7 +11,7 @@ const SecondoryContainer = () => {
 
     return (
         <div className="bg-black">
-            <div className="-mt-52 p-12 relative z-20">
+            <div className="max-sm:-mt-[38%]  md:-mt-[11%] pl-12 relative z-20">
                 {movies?.nowPlayingMovies && <MovieList movies={movies?.nowPlayingMovies} title="Now Playing Movies" />}
                 {movies?.popularMovies && <MovieList movies={movies?.popularMovies} title="Recommended Movies" />}
                 {movies?.trendingMovies && <MovieList movies={movies?.trendingMovies} title="Trending Movies" />}

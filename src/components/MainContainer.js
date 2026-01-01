@@ -8,7 +8,7 @@ const MainContainer = () => {
     if (!movies) return
     const { Title, Year } = movies[0];
     return (
-        <div>
+        <div className='pt-[10%] bg-black md: pt-0 '>
             <VedioTitle title={Title} year={Year} />
             <VedioBackground />
         </div>

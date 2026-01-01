@@ -63,9 +63,9 @@ const Header = () => {
     }, [])
 
     return (
-        <div className='flex justify-between absolute px-8 w-full py-2 bg-gradient-to-b from-black  z-10'>
+        <div className='flex justify-between absolute px-8 w-full py-2 bg-gradient-to-b from-black  z-10 flex flex-col md:flex-row'>
 
-            <img className='w-52'
+            <img className='w-52 mx-auto md:mx-0'
                 src={LOGO_URL} alt='logo'></img>
 
             {user && <div className='flex p-2'>
